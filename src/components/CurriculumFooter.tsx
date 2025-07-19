@@ -12,6 +12,7 @@ import {
   Calendar,
   Shield
 } from "lucide-react";
+import profileImage from "@/assets/touhidul-islam-profile.png";
 
 const CurriculumFooter = () => {
   return (
@@ -63,8 +64,12 @@ const CurriculumFooter = () => {
             <div className="flex flex-col md:flex-row items-center gap-8">
               {/* Creator Avatar & Info */}
               <div className="flex-shrink-0">
-                <div className="w-24 h-24 bg-gradient-primary rounded-full flex items-center justify-center text-white text-2xl font-bold">
-                  TI
+                <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-primary/30">
+                  <img 
+                    src={profileImage} 
+                    alt="Md. Touhidul Islam" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               
